@@ -1,6 +1,7 @@
 name: "CI - Test Templates"
 on:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   detect-changes:
@@ -12,8 +13,7 @@ jobs:
         id: filter
         with:
           filters: |
-            color: ./**/color/**
-            hello: ./**/hello/**
+            terraform-basic: ./**/terraform-basic/**
 
   test:
     needs: [detect-changes]
