@@ -6,9 +6,6 @@
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
 
-<div align="center">
-
-![](https://i.imgur.com/W7t3YsC.png)
 
 **[Overview](https://github.com/devcontainers-contrib/features#readme)** |
 </div>
