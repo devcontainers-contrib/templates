@@ -7,7 +7,10 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["mads-hartmann.bash-ide-vscode", "dbaeumer.vscode-eslint"]
+      "extensions": [
+        "mads-hartmann.bash-ide-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
     }
   },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
