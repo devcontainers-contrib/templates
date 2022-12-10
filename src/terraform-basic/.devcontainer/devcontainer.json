@@ -1,6 +1,6 @@
 {
     "name": "Terraform",
-    "image": "mcr.microsoft.com/devcontainers/ubuntu:22.04",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "features": {
         "ghcr.io/devcontainers/features/terraform:1": {
             "version": "${templateOption:version}",

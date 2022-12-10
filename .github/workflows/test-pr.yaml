@@ -2,7 +2,6 @@ name: "CI - Test Templates"
 on:
   pull_request:
   workflow_dispatch:
-
 jobs:
   detect-changes:
     runs-on: ubuntu-latest
