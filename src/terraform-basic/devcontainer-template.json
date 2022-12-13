@@ -1,9 +1,9 @@
 {
     "id": "terraform-basic",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Terraform (Basic)",
     "description": "Terraform is an open-source tool that provides the ability to build, change, and version infrastructure as code using declarative configuration files with HashiCorp Configuration Language (HCL). This devcontainer template allows you to get going quickly with Terraform ",
-    "documentationURL": "https://github.com/devcontainers-contrib/templates/tree/main/src/terraform",
+    "documentationURL": "https://github.com/devcontainers-contrib/templates/tree/main/src/terraform-basic",
     "licenseURL": "https://github.com/devcontainers-contrib/templates/blob/main/LICENSE",
     "options": {
         "version": {
