@@ -1,29 +1,55 @@
-# Community devcontainer features
+# devcontainer community templates
 
-[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community)](https://gitter.im/devcontainers-contrib/community)
+📂 Pre-made `.devcontainer` folders for starting your next project
 
-🐳 Extra add-in templates for
-[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
-[GitHub Codespaces](https://github.com/features/codespaces)
+<div align="center">
 
+![](https://i.imgur.com/IO5r8Gf.png)
 
-**[Overview](https://github.com/devcontainers-contrib/features#readme)** |
+<!-- prettier-ignore -->
+**[Overview](https://github.com/devcontainers-contrib/templates#readme)**
+| [Chat](https://gitter.im/devcontainers-contrib/community)
+
 </div>
 
-💻 Works with
-[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
-☁️ Works with [GitHub Codespaces](https://github.com/features/codespaces) \
-👨‍🍳 Based on the official
-[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
-project
+💻 Ready to go with GitHub Codespaces \
+🚀 Quickly get up-and-running with a devcontainer \
+🐳 No need to mess with `Dockerfile`s
 
-## Development
+## Usage
 
 ![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
 ![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
 
-📢 [We are actively seeking contributions!](CONTRIBUTING.md)
+After creating a GitHub Codespace (or a devcontainer in VS Code), open the
+Command Palette to find the <kbd>Dev Containers: Add Dev Container Configuration
+Files...</kbd> command. After you run it, VS Code will guide you through the
+creation of a `.devcontainer/devcontainer.json` file!
 
-This repository is heavily based on the
-[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
+Make sure you click the <kbd>Show All Definitions...</kbd> option to see our
+unofficial templates!
+
+## Development
+
+![GitHub.dev](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub.dev&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
+
+[📢 We are actively seeking contributions!](CONTRIBUTING.md)
+
+Guess what? You don't even need to leave your browser to add a feature template!
+Since these `devcontainer-template.json` files are just JSON files, we don't
+need a full IDE with a terminal; all we need is a JSON text editor.
+
+<div align="center">
+
+![](https://i.imgur.com/XqMz7pB.png)
+
+</div>
+
+To add a feature, all you need to do is...
+
+1. Fork this repository.
+2. Press <kbd>.</kbd> (period) on your keyboard to open GitHub.dev.
+3. Make any changes.
+4. Commit to your forked repo.
+5. Open a Pull Request to this repo.
+6. Profit! 🎉
