@@ -1,0 +1,6 @@
+{
+  "name": "Bash utilities",
+  "id": "bash-utils",
+  "version": "1.0.0",
+  "description": "🖥️ Adds Bash devtools: ShellCheck and shfmt"
+}
