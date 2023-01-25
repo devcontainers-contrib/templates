@@ -1,20 +1,19 @@
-# devcontainer community templates
+# Community devcontainer templates
 
-📂 Pre-made `.devcontainer` folders for starting your next project
+🥧 Pre-baked [@devcontainers] configurations to get you started
 
 <div align="center">
 
-![](https://i.imgur.com/IO5r8Gf.png)
+![](https://i.imgur.com/NSfVKbP.png)
 
-<!-- prettier-ignore -->
-**[Overview](https://github.com/devcontainers-contrib/templates#readme)**
-| [Chat](https://gitter.im/devcontainers-contrib/community)
+[Chat](https://gitter.im/devcontainers-contrib/community)
 
 </div>
 
+🔧 80% of the configuration you'll ever need \
 💻 Ready to go with GitHub Codespaces \
 🚀 Quickly get up-and-running with a devcontainer \
-🐳 No need to mess with `Dockerfile`s
+🐳 No need to mess with a `Dockerfile`
 
 ## Usage
 
@@ -28,6 +27,12 @@ creation of a `.devcontainer/devcontainer.json` file!
 
 Make sure you click the <kbd>Show All Definitions...</kbd> option to see our
 unofficial templates!
+
+<div align="center">
+
+![](https://i.imgur.com/IO5r8Gf.png)
+
+</div>
 
 ## Development
 
@@ -53,3 +58,5 @@ To add a feature, all you need to do is...
 4. Commit to your forked repo.
 5. Open a Pull Request to this repo.
 6. Profit! 🎉
+
+[@devcontainers]: https://github.com/devcontainers
