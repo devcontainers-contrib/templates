@@ -1,9 +1,11 @@
-#!/bin/bash
-cd $(dirname "$0")
+#!/bin/bash -e
+
+cd "$(dirname "$0")"
 source test-utils.sh
 
-# Template specific tests
-check "terraform version" terraform version
+check "Terraform" terraform version
+check "TFLine" tflint --version
+check "Terragrunt" terragrunt --version
+check "terraform-docs" terraform-docs --version
 
-# Report result
 reportResults
