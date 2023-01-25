@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
 # https://webinstall.dev/
-curl -sS https://webi.sh/shellcheck | sh
-curl -sS https://webi.sh/shfmt | sh
+su "$_REMOTE_USER" -c 'curl -sS https://webi.sh/shellcheck | sh'
+su "$_REMOTE_USER" -c 'curl -sS https://webi.sh/shfmt | sh'
