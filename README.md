@@ -59,4 +59,7 @@ To add a feature, all you need to do is...
 5. Open a Pull Request to this repo.
 6. Profit! 🎉
 
+📙 You can find more information in the [contributing guide]
+
 [@devcontainers]: https://github.com/devcontainers
+[contributing guide]: CONTRIBUTING.md
