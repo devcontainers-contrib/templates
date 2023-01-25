@@ -1,37 +1,9 @@
 {
-  "id": "terraform-basic",
-  "version": "1.0.2",
-  "name": "Terraform (Basic)",
-  "description": "Terraform is an open-source tool that provides the ability to build, change, and version infrastructure as code using declarative configuration files with HashiCorp Configuration Language (HCL). This devcontainer template allows you to get going quickly with Terraform ",
-  "documentationURL": "https://github.com/devcontainers-contrib/templates/tree/main/src/terraform-basic",
+  "name": "Terraform",
+  "id": "terraform",
+  "version": "2.0.0",
+  "description": "🏗️ Comes pre-configured with Terraform, TFLint, Terragrunt, terraform-docs",
+  "documentationURL": "https://devcontainers-contrib.github.io/templates/terraform",
   "licenseURL": "https://github.com/devcontainers-contrib/templates/blob/main/LICENSE",
-  "options": {
-    "version": {
-      "type": "string",
-      "description": "Choose version of terraform",
-      "default": "latest"
-    },
-    "tflint": {
-      "type": "string",
-      "description": "Choose version of tflint",
-      "default": "latest"
-    },
-    "terragrunt": {
-      "type": "string",
-      "description": "Choose version of terragrunt",
-      "default": "latest"
-    },
-    "tfLog": {
-      "type": "string",
-      "enum": ["off", "trace", "debug", "info", "warn", "error"],
-      "description": "Enables detailed logs to appear on stderr which is useful for debugging.",
-      "default": "info"
-    },
-    "tfLogPath": {
-      "type": "string",
-      "description": "This specifies where the log should persist its output to. ",
-      "default": "./terraform.log"
-    }
-  },
   "platforms": ["Any"]
 }

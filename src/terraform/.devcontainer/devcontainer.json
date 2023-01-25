@@ -1,36 +1,21 @@
+// https://containers.dev/implementors/json_reference/
 {
-  "name": "Terraform",
-  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+  // 💡 Replace this image with your preferred base project image!
+  // "image": "mcr.microsoft.com/devcontainers/javascript-node",
+  "image": "mcr.microsoft.com/devcontainers/base",
+
+  // https://containers.dev/features
   "features": {
-    "ghcr.io/devcontainers/features/terraform:1": {
-      "version": "${templateOption:version}",
-      "tflint": "${templateOption:tflint}",
-      "terragrunt": "${templateOption:terragrunt}"
-    },
-    "ghcr.io/dhoeric/features/terraform-docs:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "latest",
-      "dockerDashComposeVersion": "v2"
-    }
+    "ghcr.io/devcontainers/features/terraform": {},
+    "ghcr.io/dhoeric/features/terraform-docs": {},
+    "ghcr.io/devcontainers/features/docker-in-docker": {}
   },
+
   "customizations": {
     "vscode": {
-      "extensions": ["hashicorp.terraform"],
-      "settings": {
-        "terraform.languageServer": {
-          "enabled": true,
-          "args": []
-        }
-      }
+      // Make sure to also add these to .vscode/extensions.json for those who
+      // aren't using VS Code without GitHub Codespaces or devcontainers!
+      "extensions": ["HashiCorp.terraform"]
     }
-  },
-  "remoteEnv": {
-    "TF_LOG": "'${templateOption:tfLog}",
-    "TF_LOG_PATH": "'${templateOption:tfLogPath}"
   }
 }
