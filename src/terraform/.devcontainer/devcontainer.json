@@ -2,7 +2,7 @@
 {
   // 💡 Replace this image with your preferred base project image!
   // "image": "mcr.microsoft.com/devcontainers/javascript-node",
-  "image": "mcr.microsoft.com/devcontainers/base",
+  "image": "mcr.microsoft.com/devcontainers/universal",
 
   // https://containers.dev/features
   "features": {
