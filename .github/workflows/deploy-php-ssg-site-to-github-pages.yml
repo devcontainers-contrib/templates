@@ -25,6 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: shivammathur/setup-php@v2
+      - run: sudo apt-get install -y httrack webhttrack
       - run: composer install --no-dev
       - run: docs/tools/build.sh
       - uses: actions/configure-pages@v2
