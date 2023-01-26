@@ -2,10 +2,11 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "features": {
     "ghcr.io/devcontainers/features/php": {},
+    "ghcr.io/devcontainers/features/docker-in-docker": {},
     "./features/httrack": {},
-    "ghcr.io/devcontainers/features/docker-in-docker": {}
+    "./features/bash-utils": {}
   },
-  "postCreateCommand": "npm install -g @devcontainers/cli prettier && curl -sS https://webi.sh/shellcheck | sh && curl -sS https://webi.sh/shfmt | sh",
+  "postCreateCommand": "npm install -g @devcontainers/cli prettier",
   "customizations": {
     "vscode": {
       "extensions": ["lizebang.bash-extension-pack", "esbenp.prettier-vscode"]
