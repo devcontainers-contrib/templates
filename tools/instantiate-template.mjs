@@ -19,9 +19,11 @@ if (template.options) {
   }
 }
 
+console.log(args);
+
 let json = await fs.readFile(mutPath, "utf8");
 for (const [name, value] of Object.entries(args)) {
   const varText = `\${templateOption:${name}}`;
-  json = json.replace(new RegExp(varText, "g"), value);
+  json = json.replaceAll(varText, value);
 }
 await fs.writeFile(mutPath, json);
