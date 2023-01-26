@@ -1,0 +1,21 @@
+name: Publish main to ghcr
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/**
+      - .github/publish-main-to-ghcr.yml
+concurrency:
+  group: publish-main-to-ghcr
+  cancel-in-progress: true
+jobs:
+  publish-main-to-ghcr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/action@v1
+        with:
+          publish-templates: true
+          base-path-to-templates: src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
