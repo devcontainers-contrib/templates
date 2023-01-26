@@ -1,6 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "features": {
+    "ghcr.io/devcontainers/features/php": {},
+    "./features/httrack": {},
     "ghcr.io/devcontainers/features/docker-in-docker": {}
   },
   "postCreateCommand": "npm install -g @devcontainers/cli prettier && curl -sS https://webi.sh/shellcheck | sh && curl -sS https://webi.sh/shfmt | sh",
