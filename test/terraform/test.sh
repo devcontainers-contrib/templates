@@ -1,6 +1,5 @@
 #!/bin/bash -e
 
-cd "$(dirname "$0")"
 source test-utils.sh
 
 check "Terraform" terraform version
