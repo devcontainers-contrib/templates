@@ -4,11 +4,11 @@
  * all requests to /:id to src/[id].php, and all / requests to src/index.php.
  */
 
+declare(strict_types=1);
+
 // TODO(@jcbhmr): Make it so that we don't need to require_once the autoloader
 // IDEA: Use php.ini or -d to set the auto_prepend_file to the autoloader
-require_once(__DIR__ . '/../vendor/autoload.php');
-
-declare(strict_types=1);
+require_once(__DIR__ . '/vendor/autoload.php');
 
 $pathname = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 if ($pathname === '/') {
