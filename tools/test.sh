@@ -18,6 +18,8 @@ for id in test/*; do
   chmod +x "$tmp/test.sh"
   tree -a "$tmp"
   tools/instantiate-template.mjs "$tmp/.devcontainer/devcontainer.json" "src/$id/devcontainer-template.json" "test/$id/options.json"
+  echo "--- $tmp/.devcontainer/devcontainer.json ---"
+  cat "$tmp/.devcontainer/devcontainer.json"
   devcontainer up --workspace-folder "$tmp"
   devcontainer exec --workspace-folder "$tmp" ./test.sh
   rm -rf "$tmp"
