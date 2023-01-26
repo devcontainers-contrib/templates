@@ -21,13 +21,15 @@ $ids = array_diff(scandir($srcDir), ['.', '..']);
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Document</title>
+  <title>Community devcontainer templates</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 
 <body>
+
+  <h1>Community devcontainer templates</h1>
 
   <ul>
     <?php foreach ($ids as $id): ?>
@@ -36,6 +38,8 @@ $ids = array_diff(scandir($srcDir), ['.', '..']);
       </li>
     <?php endforeach; ?>
   </ul>
+
+  <p>You can find out more on <a href="https://github.com/devcontainers-contrib/templates#readme">GitHub</a></p>
 
 </body>
 
