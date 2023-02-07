@@ -1,0 +1,19 @@
+{
+  "name": "devcontainers-contrib/templates-docs",
+  "type": "project",
+  "require": {
+    "michelf/php-markdown": "^2.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DevcontainersContrib\\TemplatesDocs\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jacob Hummer",
+      "email": "jcbhmr@outlook.com"
+    }
+  ]
+}

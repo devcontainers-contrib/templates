@@ -6,7 +6,9 @@
 
 ![](https://i.imgur.com/NSfVKbP.png)
 
-[Chat](https://gitter.im/devcontainers-contrib/community)
+<!-- prettier-ignore -->
+[Docs site](https://devcontainers-contrib.github.io/templates/)
+| [Chat](https://gitter.im/devcontainers-contrib/community)
 
 </div>
 
@@ -38,7 +40,7 @@ unofficial templates!
 
 ![GitHub.dev](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub.dev&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
 
-[📢 We are actively seeking contributions!](CONTRIBUTING.md)
+📢 We want **you** to [contribute]!
 
 Guess what? You don't even need to leave your browser to add a feature template!
 Since these `devcontainer-template.json` files are just JSON files, we don't
@@ -61,5 +63,16 @@ To add a feature, all you need to do is...
 
 📙 You can find more information in the [contributing guide]
 
+### Docs website
+
+If you want to contribute to the docs website, you'll actually need to spin up a
+local development environment. We do offer a preconfigured devcontainer for
+GitHub Codespaces or VS Code Dev Containers, but you can use anything that fits
+the requirements described in the `devcontainer.json` file.
+
+⚠️ All the `docs/tools/` scripts assume that you're current working directory is
+the `docs/` folder, not the root of the repository. It's like a subproject!
+
 [@devcontainers]: https://github.com/devcontainers
+[contribute]: CONTRIBUTING.md
 [contributing guide]: CONTRIBUTING.md

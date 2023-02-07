@@ -1,8 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "features": {
-    "./features/bash-utils": {},
-    "ghcr.io/devcontainers/features/docker-in-docker": {}
+    "ghcr.io/devcontainers/features/php": {},
+    "ghcr.io/devcontainers/features/docker-in-docker": {},
+    "./features/httrack": {},
+    "./features/bash-utils": {}
   },
   "postCreateCommand": "npm install -g @devcontainers/cli prettier",
   "customizations": {

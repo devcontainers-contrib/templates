@@ -1,0 +1,36 @@
+name: Deploy PHP SSG site to GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deploy-php-ssg-site-to-github-pages.yml
+      - docs/pages/**
+      - docs/src/**
+      - docs/*.json
+      - docs/*.php
+      - docs/tools/build.sh
+concurrency:
+  group: deploy-php-ssg-site-to-github-pages
+  cancel-in-progress: true
+jobs:
+  deploy-php-ssg-site-to-github-pages:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@v2
+      - run: sudo apt-get install -y httrack webhttrack
+      - run: composer install --no-dev
+      - run: docs/tools/build.sh
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/dist
+      - id: deploy-pages
+        uses: actions/deploy-pages@v1
