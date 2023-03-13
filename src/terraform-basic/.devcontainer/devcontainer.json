@@ -22,10 +22,8 @@
     "vscode": {
       "extensions": ["hashicorp.terraform"],
       "settings": {
-        "terraform.languageServer": {
-          "enabled": true,
-          "args": []
-        }
+        "terraform.languageServer.enable": true,
+        "terraform.languageServer.args": ["serve"]
       }
     }
   },
