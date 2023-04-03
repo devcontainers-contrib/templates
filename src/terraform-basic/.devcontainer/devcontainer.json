@@ -30,7 +30,7 @@
     }
   },
   "remoteEnv": {
-    "TF_LOG": "'${templateOption:tfLog}",
+    "TF_LOG": "${templateOption:tfLog}",
     "TF_LOG_PATH": "'${templateOption:tfLogPath}"
   }
 }
