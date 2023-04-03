@@ -30,7 +30,7 @@
     "tfLogPath": {
       "type": "string",
       "description": "This specifies where the log should persist its output to. ",
-      "default": "./terraform.log"
+      "default": "terraform.log"
     }
   },
   "platforms": ["Any"]
