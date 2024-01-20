@@ -24,7 +24,9 @@
       "settings": {
         "terraform.languageServer": {
           "enabled": true,
-          "args": []
+          "args": [
+            "serve"
+          ]
         }
       }
     }
